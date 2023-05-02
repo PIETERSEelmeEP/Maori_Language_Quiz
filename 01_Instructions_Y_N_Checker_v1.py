@@ -1,5 +1,5 @@
 """Program to quiz and teach the first ten maori numerals - v1
-ask if user wants to view instructions & show instructions
+ask if user wants to view instructions & yes/no checker
 Created by Elme Pieterse
 03/05/2023
 """
