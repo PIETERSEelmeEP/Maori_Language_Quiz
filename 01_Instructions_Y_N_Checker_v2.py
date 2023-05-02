@@ -1,6 +1,6 @@
 """Program to quiz and teach the first ten maori numerals - v2
 y/n checker will be improved so that the code not only accepts 'yes' & 'no',
-but other variations of answers
+but also other variations of answers
 Created by Elme Pieterse
 03/05/2023
 """
@@ -8,8 +8,6 @@ Created by Elme Pieterse
 view_instructions = input("Do you want to see the instructions? "
                           "(Yes/No): ").lower()
 instructions = "Maori Numerals Quiz Instructions"
-
-print(view_instructions)
 
 if view_instructions == "yes":
     print(instructions)
