@@ -7,8 +7,6 @@ Created by Elme Pieterse
 view_instructions = input("Do you want to see the instructions? (Yes/No): ")
 instructions = "Maori Numerals Quiz Instructions"
 
-print(view_instructions)
-
 if view_instructions == "yes":
     print(instructions)
 elif view_instructions == "no":
