@@ -3,7 +3,7 @@ ask if user wants to view instructions & yes/no checker
 Created by Elme Pieterse
 03/05/2023
 """
-
+# Ask if user wants to view instructions
 view_instructions = input("Do you want to see the instructions? (Yes/No): ")
 instructions = "Maori Numerals Quiz Instructions"
 
