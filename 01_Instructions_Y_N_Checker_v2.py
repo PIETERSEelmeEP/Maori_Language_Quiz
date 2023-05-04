@@ -20,4 +20,3 @@ elif view_instructions == "n":
 else:
     print("Please enter either 'Yes' or 'No': ")
 
-print(f"You entered: {view_instructions}")
