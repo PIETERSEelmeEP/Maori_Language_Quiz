@@ -1,25 +1,28 @@
-"""Program to quiz and teach the first ten maori numerals - v3
-the instructions will display correctly, & no errors will be present
+"""Program's instructions & Yes/No Checker - v3
+This converts the program form 01_Instructions_Y_N_Checker_v2 into a loop
+inorder to make it easier and more effective to test
 Created by Elme Pieterse
 03/05/2023
 """
 
-view_instructions = input("Do you want to see the instructions? "
-                          "(Yes/No): ").lower()
-instructions = "Maori Numerals Quiz Instructions:\nThere are to difficulty " \
-               "levels, Easy(1) or Hard(2)\nYou will be quizzed based off " \
-               "your difficulty\nDifficulty: Easy\nYou will be given the " \
-               "maori name of a number\nYou will be asked what "
+view_instructions = ""
+instructions = "Maori Numerals Quiz Instructions"
+while view_instructions != "a":
 
-if view_instructions == "yes":
-    print(instructions)
-elif view_instructions == "y":
-    print(instructions)
-elif view_instructions == "no":
-    print("Program continues")
-elif view_instructions == "n":
-    print("Program continues")
-else:
-    print("Please enter either 'Yes' or 'No': ")
+    # Ask if user wants to view instructions
+    view_instructions = input("Do you want to see the instructions? "
+                              "(Yes/No): ").lower()
 
-print(f"You entered: {view_instructions}")
+    # If user input 'yes' or 'y' output will be the instructions 
+    if view_instructions == "yes" or view_instructions == "y":
+        print(instructions)
+
+    # If user input 'no' or 'n', 'Program continues' will be the output
+    elif view_instructions == "no" or view_instructions == "n":
+        print("Program continues")
+
+    # Otherwise the required inputs will be displayed
+    else:
+        print("Please enter either 'Yes' or 'No': ")
+
+    print(f"You entered: {view_instructions}")
