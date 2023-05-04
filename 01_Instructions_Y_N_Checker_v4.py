@@ -1,7 +1,7 @@
 """Program's instructions & Yes/No Checker - v4
 This program puts 01_Instructions_Y_N_Checker_v3 into a function
 Created by Elme Pieterse
-03/05/2023
+04/05/2023
 """
 
 
@@ -30,4 +30,3 @@ def yes_no_checker(question_text):
 # Main Routine:
 view_instructions = yes_no_checker("Do you want to see the instructions? "
                                    "(Yes/No): ").lower()
-print(f"you entered: {view_instructions}\n")
