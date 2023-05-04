@@ -1,5 +1,6 @@
 """Program's instructions & Yes/No Checker - v4
 This program puts 01_Instructions_Y_N_Checker_v3 into a function
+Only yes/no checker
 Created by Elme Pieterse
 04/05/2023
 """
