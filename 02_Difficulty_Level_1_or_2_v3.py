@@ -10,7 +10,7 @@ def difficulty_level_checker(question):
     while True:
 
         # Ask what level difficulty
-        difficulty_chosen = int(input(question))
+        difficulty_chosen = input(question)
 
         # If user inputs '1' output the easy level questions
         if difficulty_chosen == 1:
