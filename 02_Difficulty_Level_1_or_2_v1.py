@@ -5,7 +5,8 @@ Created by Elme Pieterse
 """
 # Ask what level difficulty
 difficulty = int(input("What level of difficulty do you want to choose:\n"
-                       "If easy type '1', if hard type '2': "))
+                       "If you want the easy level type the number '1'\n"
+                       "or, '2' if you want the hard level: "))
 
 # If user inputs '1' output the easy level questions
 if difficulty == 1:
