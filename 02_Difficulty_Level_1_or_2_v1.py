@@ -4,9 +4,8 @@ Created by Elme Pieterse
 04/05/2023
 """
 # Ask what level difficulty
-difficulty = int(input("What level of difficulty do you want to choose:\n"
-                       "If you want the easy level type the number '1'\n"
-                       "or, '2' if you want the hard level: "))
+difficulty = input("What level of difficulty do you want to choose: Easy(1) or"
+                   " Hard(2): ")
 
 # If user inputs '1' output the easy level questions
 if difficulty == 1:
@@ -18,4 +17,4 @@ elif difficulty == 2:
 
 # Otherwise display required inputs
 else:
-    print("Please enter the numerals '1' or '2': ")
+    input("Please input the numerals '1' or '2'")
