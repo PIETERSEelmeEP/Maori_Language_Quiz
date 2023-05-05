@@ -1,20 +1,17 @@
 """Program asking difficulty Level - v1
-ask what level of difficulty does the user want to play, Easy(1) or Hard(2)
+ask what level of difficulty does the user want to play, Easy(1) or Hard(2),
+and check if it is a valid input
 Created by Elme Pieterse
 04/05/2023
 """
 # Ask what level difficulty
-difficulty = input("What level of difficulty do you want to choose: Easy(1) or"
-                   " Hard(2): ")
+difficulty = int(input("What level of difficulty do you want to choose: "
+                       "Easy(1) or Hard(2): "))
 
-# If user inputs '1' output the easy level questions
-if difficulty == 1:
-    print("Easy level questions")
+# Continue asking for a valid input if invalid input is given
+while not difficulty == 1 or difficulty == 2:
+    print("Please retry: Pick a difficulty, Easy(1) or Hard(2)")
+    #   Ask for an input again
+    print("Please enter the numerals '1' or '2': ")
 
-# If user inputs '2' output the hard level questions
-elif difficulty == 2:
-    print("Hard level questions")
-
-# Otherwise display required inputs
-else:
-    input("Please input the numerals '1' or '2'")
+print(f"You entered the level {difficulty} difficulty")
