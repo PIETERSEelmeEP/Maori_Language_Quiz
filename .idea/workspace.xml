@@ -30,7 +30,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "C:/Users/elme2/OneDrive - Middleton Grange School/2023/DTC/AS 1.7 Programming/Exercises/Maori_Language_Quiz",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+    "settings.editor.selected.configurable": "vcs.Subversion"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -156,7 +156,7 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration" cleanupOnStartRun="true">
-    <configuration>C:\Users\elme2\AppData\Roaming\Subversion</configuration>
+    <configuration useDefault="false">C:\Users\elme2\OneDrive - Middleton Grange School\2023\DTC\AS 1.7 Programming\Exercises\Maori_Language_Quiz</configuration>
     <supportedVersion>125</supportedVersion>
   </component>
   <component name="TaskManager">
