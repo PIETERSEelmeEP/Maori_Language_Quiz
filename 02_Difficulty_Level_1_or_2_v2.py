@@ -10,7 +10,7 @@ while difficulty != 'x':
 
     # Ask what level difficulty
     difficulty = input("What level of difficulty do you want to choose: "
-                           "Easy(1) or Hard(2): ")
+                       "Easy(1) or Hard(2): ")
 
     # If user inputs '1' output the easy level questions
     if difficulty == 1:
