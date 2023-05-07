@@ -9,9 +9,9 @@ difficulty = int(input("What level of difficulty do you want to choose: "
                        "Easy(1) or Hard(2): "))
 
 # Continue asking for a valid input if invalid input is given
-while not difficulty == 1 or difficulty == 2:
+while not 1 <= difficulty <= 2:
     print("Please retry: Pick a difficulty, Easy(1) or Hard(2)")
     #   Ask for an input again
-    print("Please enter the numerals '1' or '2': ")
+    difficulty = int(input("Please enter the numerals '1' or '2': "))
 
 print(f"You entered the level {difficulty} difficulty")
