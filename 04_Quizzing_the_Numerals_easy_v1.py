@@ -31,4 +31,7 @@ def True_False_Checker(question_text):
 
 
 # Main Routine
-answer_given = True_False_Checker("Does Tahi mean 3?").lower()
+answer_given = True_False_Checker("Does Tahi mean 3? ").lower()
+
+if answer_given == "true" or answer_given == "t" or answer_given == "false" or
+answer_given ==
