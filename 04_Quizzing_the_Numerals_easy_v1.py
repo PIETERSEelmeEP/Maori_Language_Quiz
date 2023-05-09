@@ -7,7 +7,7 @@ Created by Elme Pieterse
 
 
 # True or False checker Function:
-def True_False_Checker(question_text):
+def true_false_checker(question_text):
     while True:
 
         # Input a true of false question
@@ -31,7 +31,5 @@ def True_False_Checker(question_text):
 
 
 # Main Routine
-answer_given = True_False_Checker("Does Tahi mean 3? ").lower()
-
-if answer_given == "true" or answer_given == "t" or answer_given == "false" or
-answer_given ==
+answer_given = true_false_checker("Does Tahi mean 3? ").lower()
+print("Checking if answer is correct.......")
