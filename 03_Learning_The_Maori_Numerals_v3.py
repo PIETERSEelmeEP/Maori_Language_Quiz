@@ -9,11 +9,11 @@ review_maori_numerals = ""
 MAORI_NUMERALS = "Maori Numerals"
 while review_maori_numerals != "a":
 
-    # Ask if user wants to view instructions
+    # Ask if user wants to learn/review the maori numerals
     review_maori_numerals = input("Do you want to see the instructions? "
                                   "(Yes/No): ").lower()
 
-    # If user input 'yes' or 'y' output will be the instructions
+    # If user input 'yes' or 'y' output will be the maori numerals
     if review_maori_numerals == "yes" or review_maori_numerals == "y":
         print(MAORI_NUMERALS)
 
