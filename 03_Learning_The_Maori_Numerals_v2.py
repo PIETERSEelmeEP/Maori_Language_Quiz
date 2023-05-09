@@ -6,13 +6,13 @@ Created by Elme Pieterse
 09/05/2023
 """
 
-# Ask if user wants to view instructions
+# Ask if user wants to learn/review the maori numerals
 review_maori_numerals = input("Do you want to learn or revise the maori "
                               "numerals? (Yes/No): ").lower()
 
 MAORI_NUMERALS = "Maori Numerals"
 
-# If user input 'yes' or 'y' output will be the instructions
+# If user input 'yes' or 'y' output will be the maori numerals
 if review_maori_numerals == "yes" or review_maori_numerals == "y":
     print(MAORI_NUMERALS)
 
