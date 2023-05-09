@@ -13,15 +13,15 @@ review_maori_numerals = input("Do you want to learn or revise the maori "
 MAORI_NUMERALS = "Maori Numerals"
 
 # If user input 'yes' or 'y' output will be the instructions
-if view_instructions == "yes" or view_instructions == "y":
-    print(instructions)
+if review_maori_numerals == "yes" or review_maori_numerals == "y":
+    print(MAORI_NUMERALS)
 
 # If user input 'no' or 'n', 'Program continues' will be the output
-elif view_instructions == "no" or view_instructions == "n":
+elif review_maori_numerals == "no" or review_maori_numerals == "n":
     print("Program continues")
 
 # Otherwise the required inputs will be displayed
 else:
     print("Please enter either 'Yes' or 'No': ")
 
-print(f"You entered: {view_instructions}")
+print(f"You entered: {review_maori_numerals}")
