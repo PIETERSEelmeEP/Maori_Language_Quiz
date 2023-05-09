@@ -3,13 +3,13 @@ ask if user wants to learn/review the maori numerals 1 to 10
 Created by Elme Pieterse
 09/05/2023
 """
-# Ask if user wants to view instructions
+# Ask if user wants to learn/review the maori numerals
 review_maori_numerals = input("Do you want to learn or revise the maori "
                               "numerals? (Yes/No): ")
 
 MAORI_NUMERALS = "Maori Numerals"
 
-# If user inputs 'yes' output the instructions
+# If user inputs 'yes' output the maori numerals
 if review_maori_numerals == "yes":
     print(MAORI_NUMERALS)
 
