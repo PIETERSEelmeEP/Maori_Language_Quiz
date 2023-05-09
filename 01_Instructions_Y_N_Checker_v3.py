@@ -1,5 +1,5 @@
 """Program's instructions & Yes/No Checker - v3
-This converts the program form 01_Instructions_Y_N_Checker_v2 into a loop
+This converts the program from 01_Instructions_Y_N_Checker_v2 into a loop
 inorder to make it easier and more effective to test
 Created by Elme Pieterse
 03/05/2023
