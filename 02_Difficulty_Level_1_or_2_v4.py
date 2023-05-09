@@ -7,7 +7,7 @@ Created by Elme Pieterse
 
 # Function:
 def difficulty_level_checker(question):
-    error = "Please retry: Pick a difficulty, Easy(1) or Hard(2)"
+    error = "Please retry: Pick a numeral: 1 or 2"
 
     while True:
         try:
