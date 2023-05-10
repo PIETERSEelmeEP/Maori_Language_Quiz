@@ -5,4 +5,13 @@ Created by Elme Pieterse
 10/05/2023
 """
 
+import random
 
+MAORI_NUMERALS = ["tahi", "rua", "toru", "wha", "rima", "ono", "whitu",
+                  "waru", "iwa", "tekau"]
+NUMBERS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+for item in range(20):
+    maori_numeral = random.choice(MAORI_NUMERALS)
+    number = random.choice(NUMBERS)
+    print(f"Does {maori_numeral} mean {number}?")
