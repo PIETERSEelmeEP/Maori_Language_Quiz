@@ -5,20 +5,6 @@ Created by Elme Pieterse
 """
 
 
-# answers
-tahi = 1
-rua = 2
-toru = 3
-wha = 4
-rima = 5
-ono = 6
-whitu = 7
-waru = 8
-iwa = 9
-tekau = 10
-
-
-
 # together
 def question_generator_and_checker():
     import random
@@ -54,6 +40,13 @@ def question_generator_and_checker():
     answer_given = true_false_checker(question).lower()
     print("Checking if answer is correct.......")
     return answer_given
+
+
+# answers
+def answers_checker(answer):
+    answers_to_questions = [["tahi", 1],["rua", 2], ["toru", 3], ["wha", 4],
+                            ["rima", 5], ["ono", 6], ["whitu", 7], ["waru", 8],
+                            ["iwa", 9], ["tekau", 10]]
 
 
 # Main Routine
