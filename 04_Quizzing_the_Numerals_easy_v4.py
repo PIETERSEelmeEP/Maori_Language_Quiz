@@ -1,4 +1,4 @@
-"""Program quizzing the user of Maori Numerals (True or False quiz) - v3
+"""Program quizzing the user of Maori Numerals (True or False quiz) - v4
 Creating the answers
 Created by Elme Pieterse
 11/05/2023
@@ -13,6 +13,8 @@ def question_generator_and_checker():
     NUMBERS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     maori_numeral = random.choice(MAORI_NUMERALS)
     number = random.choice(NUMBERS)
+    maori_numeral = "tahi"
+    number = 2
     question = f"Does {maori_numeral} mean {number}? "
 
     def true_false_checker(question_text):
@@ -38,15 +40,60 @@ def question_generator_and_checker():
                 print("Please enter either 'True' or 'False': ")
 
     answer_given = true_false_checker(question).lower()
-    print("Checking if answer is correct.......")
+
+    def answer_marker():
+
+        one = "tahi" and 1
+        two = "rua" and 2
+        three = "toru" and 3
+        four = "wha" and 4
+        five = "rima" and 5
+        six = "ono" and 6
+        seven = "whitu" and 7
+        eight = "waru" and 8
+        nine = "iwa" and 9
+        ten = "tekau" and 10
+
+        def answer_given_t_or_f():
+            if answer_given != "true":
+                print("Correct, Amazing job!")
+            else:
+                print("Sorry, keep trying, you can do it!")
+
+        if maori_numeral and number != one:
+            if maori_numeral and number != two:
+                if maori_numeral and number != three:
+                    if maori_numeral and number != four:
+                        if maori_numeral and number != five:
+                            if maori_numeral and number != six:
+                                if maori_numeral and number != seven:
+                                    if maori_numeral and number != eight:
+                                        if maori_numeral and number != nine:
+                                            if maori_numeral and number != ten:
+                                                print()
+                                            else:
+                                                answer_given_t_or_f()
+                                        else:
+                                            answer_given_t_or_f()
+                                    else:
+                                        answer_given_t_or_f()
+                                else:
+                                    answer_given_t_or_f()
+                            else:
+                                answer_given_t_or_f()
+                        else:
+                            answer_given_t_or_f()
+                    else:
+                        answer_given_t_or_f()
+                else:
+                    answer_given_t_or_f()
+            else:
+                answer_given_t_or_f()
+        else:
+            answer_given_t_or_f()
+
+    answer_marker()
     return answer_given
-
-
-# answers
-def answers_checker(answer):
-    answers_to_questions = [["tahi", 1],["rua", 2], ["toru", 3], ["wha", 4],
-                            ["rima", 5], ["ono", 6], ["whitu", 7], ["waru", 8],
-                            ["iwa", 9], ["tekau", 10]]
 
 
 # Main Routine
