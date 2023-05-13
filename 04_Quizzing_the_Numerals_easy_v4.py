@@ -13,8 +13,6 @@ def question_generator_and_checker():
     NUMBERS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     maori_numeral = random.choice(MAORI_NUMERALS)
     number = random.choice(NUMBERS)
-    maori_numeral = "tahi"
-    number = 2
     question = f"Does {maori_numeral} mean {number}? "
 
     def true_false_checker(question_text):
@@ -97,4 +95,12 @@ def question_generator_and_checker():
 
 
 # Main Routine
+question_generator_and_checker()
+question_generator_and_checker()
+question_generator_and_checker()
+question_generator_and_checker()
+question_generator_and_checker()
+question_generator_and_checker()
+question_generator_and_checker()
+question_generator_and_checker()
 question_generator_and_checker()
