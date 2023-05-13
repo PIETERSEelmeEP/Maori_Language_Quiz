@@ -96,11 +96,3 @@ def question_generator_and_checker():
 
 # Main Routine
 question_generator_and_checker()
-question_generator_and_checker()
-question_generator_and_checker()
-question_generator_and_checker()
-question_generator_and_checker()
-question_generator_and_checker()
-question_generator_and_checker()
-question_generator_and_checker()
-question_generator_and_checker()
