@@ -11,6 +11,7 @@ def question_generator_and_checker_hard():
     MAORI_NUMERALS = ["tahi", "rua", "toru", "wha", "rima", "ono", "whitu",
                       "waru", "iwa", "tekau"]
     maori_numeral = random.choice(MAORI_NUMERALS)
+    maori_numeral = "tahi"
     question = f"What number is {maori_numeral}? "
     error = "Please enter a whole number between 1 and ten: "
 
@@ -77,66 +78,78 @@ def question_generator_and_checker_hard():
             except ValueError:
                 print(error)
 
-    answer_given = int(answer_checker(question).lower())
+    answer_given = int(answer_checker(question))
 
     def answer_checker():
-
-        one = "tahi"
-        two = "rua"
-        three = "toru"
-        four = "wha"
-        five = "rima"
-        six = "ono"
-        seven = "whitu"
-        eight = "waru"
-        nine = "iwa"
-        ten = "tekau"
-
-        def answer_given_hard():
-            if answer giver 
-
-        def answer_given_t_or_f():
-            if answer_given != "true":
-                print("Correct, Amazing job!")
-            else:
-                print("Sorry, keep trying, you can do it!")
-
-        if maori_numeral != one:
-            if maori_numeral != two:
-                if maori_numeral != three:
-                    if maori_numeral != four:
-                        if maori_numeral != five:
-                            if maori_numeral != six:
-                                if maori_numeral != seven:
-                                    if maori_numeral != eight:
-                                        if maori_numeral != nine:
-                                            if maori_numeral != ten:
-                                                print()
-                                            else:
-                                                if answer_given == "true":
+        if maori_numeral != "tahi":
+            if maori_numeral != "rua":
+                if maori_numeral != "toru":
+                    if maori_numeral != "wha":
+                        if maori_numeral != "rima":
+                            if maori_numeral != "ono":
+                                if maori_numeral != "whitu":
+                                    if maori_numeral != "waru":
+                                        if maori_numeral != "iwa":
+                                            if maori_numeral == "tekau":
+                                                if answer_given == 10:
                                                     print("Correct, Amazing "
                                                           "job!")
                                                 else:
                                                     print("Sorry, keep trying,"
                                                           " you can do it!")
+                                            else:
+                                                print()
                                         else:
-                                            answer_given_t_or_f()
+                                            if answer_given != 9:
+                                                print(
+                                                    "Sorry, keep trying, you "
+                                                    "can do it!")
+                                            else:
+                                                print("Correct, Amazing job!")
                                     else:
-                                        answer_given_t_or_f()
+                                        if answer_given != 8:
+                                            print(
+                                                "Sorry, keep trying, you can "
+                                                "do it!")
+                                        else:
+                                            print("Correct, Amazing job!")
                                 else:
-                                    answer_given_t_or_f()
+                                    if answer_given != 7:
+                                        print(
+                                            "Sorry, keep trying, you can do "
+                                            "it!")
+                                    else:
+                                        print("Correct, Amazing job!")
                             else:
-                                answer_given_t_or_f()
+                                if answer_given != 6:
+                                    print("Sorry, keep trying, you can do it!")
+                                else:
+                                    print("Correct, Amazing job!")
                         else:
-                            answer_given_t_or_f()
+                            if answer_given != 5:
+                                print("Sorry, keep trying, you can do it!")
+                            else:
+                                print("Correct, Amazing job!")
                     else:
-                        answer_given_t_or_f()
+                        if answer_given != 4:
+                            print("Sorry, keep trying, you can do it!")
+                        else:
+                            print("Correct, Amazing job!")
                 else:
-                    answer_given_t_or_f()
+                    if answer_given != 3:
+                        print("Sorry, keep trying, you can do it!")
+                    else:
+                        print("Correct, Amazing job!")
             else:
-                answer_given_t_or_f()
+                if answer_given != 2:
+                    print("Sorry, keep trying, you can do it!")
+                else:
+                    print("Correct, Amazing job!")
         else:
-            answer_given_t_or_f()
+            if answer_given != 1:
+                print("Sorry, keep trying, you can do it!")
+            else:
+                print("Correct, Amazing job!")
 
     answer_checker()
     return answer_given
