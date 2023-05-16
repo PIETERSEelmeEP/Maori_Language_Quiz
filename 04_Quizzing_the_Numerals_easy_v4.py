@@ -70,7 +70,12 @@ def question_generator_and_checker():
                                             if maori_numeral and number != ten:
                                                 print()
                                             else:
-                                                answer_given_t_or_f()
+                                                if answer_given == "true":
+                                                    print("Correct, Amazing "
+                                                          "job!")
+                                                else:
+                                                    print("Sorry, keep trying,"
+                                                          " you can do it!")
                                         else:
                                             answer_given_t_or_f()
                                     else:
