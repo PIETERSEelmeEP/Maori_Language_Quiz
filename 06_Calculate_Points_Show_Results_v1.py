@@ -1,21 +1,23 @@
 """Program calculates the users points - v1
 This will calculate the/add/subtract points according to the result_answer,
-already put into a function
+already put into a function of sum sort/planning
 Created by Elme Pieterse
 16/05/2023
 """
 
 
-def question_generator_hard():
-    import random
+def calculate_points_show_results():
+    points = 0
 
-    MAORI_NUMERALS = ["tahi", "rua", "toru", "wha", "rima", "ono", "whitu",
-                      "waru", "iwa", "tekau"]
+    result_answer = "correct" or "incorrect"
 
-    maori_numeral = random.choice(MAORI_NUMERALS)
-    question = input(f"What number is {maori_numeral}? ")
-    return question
+    if result_answer == "correct":
+        points += 10
+        print(points)
+    else:
+        points -= 5
+        print(points)
 
 
 # Main Routine
-question_generator_hard()
+calculate_points_show_results()
