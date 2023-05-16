@@ -3,7 +3,7 @@ This will be the question generator/maori numeral generator, already put into
 a function
 Created by Elme Pieterse
 15/05/2023
-"""`
+"""
 
 
 def question_generator_hard():
