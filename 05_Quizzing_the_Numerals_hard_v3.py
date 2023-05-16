@@ -77,8 +77,68 @@ def question_generator_and_checker_hard():
             except ValueError:
                 print(error)
 
-    answer_given = int(answer_checker(question))
-    print("Checking if answer is correct.......")
+    answer_given = int(answer_checker(question).lower())
+
+    def answer_checker():
+
+        one = "tahi"
+        two = "rua"
+        three = "toru"
+        four = "wha"
+        five = "rima"
+        six = "ono"
+        seven = "whitu"
+        eight = "waru"
+        nine = "iwa"
+        ten = "tekau"
+
+        def answer_given_hard():
+            if answer giver 
+
+        def answer_given_t_or_f():
+            if answer_given != "true":
+                print("Correct, Amazing job!")
+            else:
+                print("Sorry, keep trying, you can do it!")
+
+        if maori_numeral != one:
+            if maori_numeral != two:
+                if maori_numeral != three:
+                    if maori_numeral != four:
+                        if maori_numeral != five:
+                            if maori_numeral != six:
+                                if maori_numeral != seven:
+                                    if maori_numeral != eight:
+                                        if maori_numeral != nine:
+                                            if maori_numeral != ten:
+                                                print()
+                                            else:
+                                                if answer_given == "true":
+                                                    print("Correct, Amazing "
+                                                          "job!")
+                                                else:
+                                                    print("Sorry, keep trying,"
+                                                          " you can do it!")
+                                        else:
+                                            answer_given_t_or_f()
+                                    else:
+                                        answer_given_t_or_f()
+                                else:
+                                    answer_given_t_or_f()
+                            else:
+                                answer_given_t_or_f()
+                        else:
+                            answer_given_t_or_f()
+                    else:
+                        answer_given_t_or_f()
+                else:
+                    answer_given_t_or_f()
+            else:
+                answer_given_t_or_f()
+        else:
+            answer_given_t_or_f()
+
+    answer_checker()
     return answer_given
 
 
