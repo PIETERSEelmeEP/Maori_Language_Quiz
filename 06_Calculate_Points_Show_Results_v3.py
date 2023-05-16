@@ -4,12 +4,24 @@ this version is the v1 combined with the quizzing_the_numerals_hard_v4
 Created by Elme Pieterse
 16/05/2023
 """
+STARTING_POINTS = 0
+points = STARTING_POINTS
+
+def calculate_points(result_answer):
+    STARTING_POINTS = 0
+    points = STARTING_POINTS
+
+    if result_answer == "correct":
+        points += 10
+        print(f"You have {points} points")
+    else:
+        points -= 5
+        print(f"You have {points} points")
+
 
 for item in range(20):
     def question_generator_and_checker_hard():
         import random
-        STARTING_POINTS = 0
-        points = STARTING_POINTS
         MAORI_NUMERALS = ["tahi", "rua", "toru", "wha", "rima", "ono", "whitu",
                           "waru", "iwa", "tekau"]
         maori_numeral = random.choice(MAORI_NUMERALS)
@@ -81,6 +93,14 @@ for item in range(20):
 
         answer_given = int(answer_checker(question))
 
+        def correct_answer():
+            print("Correct, Amazing job!")
+            points += 10
+
+        def wrong_answer():
+            print("Sorry, keep trying, you can do it!")
+            calculate_points("not")
+
         def answer_checker_hard():
             if maori_numeral != "tahi":
                 if maori_numeral != "rua":
@@ -93,12 +113,14 @@ for item in range(20):
                                             if maori_numeral != "iwa":
                                                 if maori_numeral == "tekau":
                                                     if answer_given == 10:
-                                                        print("Correct, Amazing "
-                                                              "job!")
+                                                        print(
+                                                            "Correct, Amazing "
+                                                            "job!")
                                                         points += 10
                                                     else:
-                                                        print("Sorry, keep trying,"
-                                                              " you can do it!")
+                                                        print(
+                                                            "Sorry, keep trying,"
+                                                            " you can do it!")
                                                         calculate_points("not")
                                                 else:
                                                     print()
@@ -109,7 +131,8 @@ for item in range(20):
                                                         "can do it!")
                                                     calculate_points("not")
                                                 else:
-                                                    print("Correct, Amazing job!")
+                                                    print(
+                                                        "Correct, Amazing job!")
                                                     points += 10
                                         else:
                                             if answer_given != 8:
@@ -122,15 +145,17 @@ for item in range(20):
                                                 points += 10
                                     else:
                                         if answer_given != 7:
-                                            print("Sorry, keep trying, you can do "
-                                                  "it!")
+                                            print(
+                                                "Sorry, keep trying, you can do "
+                                                "it!")
                                             calculate_points("not")
                                         else:
                                             print("Correct, Amazing job!")
                                             points += 10
                                 else:
                                     if answer_given != 6:
-                                        print("Sorry, keep trying, you can do it!")
+                                        print(
+                                            "Sorry, keep trying, you can do it!")
                                         calculate_points("not")
                                     else:
                                         print("Correct, Amazing job!")
@@ -173,7 +198,6 @@ for item in range(20):
 
         answer_checker_hard()
         return answer_given
-
 
 # Main Routine
 question_generator_and_checker_hard()
