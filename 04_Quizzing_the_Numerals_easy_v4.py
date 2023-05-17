@@ -39,19 +39,7 @@ def question_generator_and_answers_easy():
     maori_numeral = random.choice(MAORI_NUMERALS)
     number = random.choice(NUMBERS)
     question = f"Does {maori_numeral} mean {number}? "
-    true_false_checker(question)
-    answer = question
-
-    one = "tahi" and 1
-    two = "rua" and 2
-    three = "toru" and 3
-    four = "wha" and 4
-    five = "rima" and 5
-    six = "ono" and 6
-    seven = "whitu" and 7
-    eight = "waru" and 8
-    nine = "iwa" and 9
-    ten = "tekau" and 10
+    answer = true_false_checker(question).lower()
 
     def answer_given_t_or_f(true_false_):
         if answer != true_false_:
@@ -59,35 +47,26 @@ def question_generator_and_answers_easy():
         else:
             print("Sorry, keep trying, you can do it!")
 
-    if maori_numeral and number != one:
-        if maori_numeral and number != two:
-            if maori_numeral and number != three:
-                if maori_numeral and number != four:
-                    if maori_numeral and number != five:
-                        if maori_numeral and number != six:
-                            if maori_numeral and number != seven:
-                                if maori_numeral and number != eight:
-                                    if maori_numeral and number != nine:
-                                        if maori_numeral and number != ten:
-                                            print()
-                                        else:
-                                            answer_given_t_or_f("false")
-                                    else:
-                                        answer_given_t_or_f("true")
-                                else:
-                                    answer_given_t_or_f("true")
-                            else:
-                                answer_given_t_or_f("true")
-                        else:
-                            answer_given_t_or_f("true")
-                    else:
-                        answer_given_t_or_f("true")
-                else:
-                    answer_given_t_or_f("true")
-            else:
-                answer_given_t_or_f("true")
-        else:
-            answer_given_t_or_f("true")
+    if maori_numeral == "tahi" and number == 1:
+        answer_given_t_or_f("false")
+    elif maori_numeral == "rua" and number == 2:
+        answer_given_t_or_f("false")
+    elif maori_numeral == "toru" and number == 3:
+        answer_given_t_or_f("false")
+    elif maori_numeral == "wha" and number == 4:
+        answer_given_t_or_f("false")
+    elif maori_numeral == "rima" and number == 5:
+        answer_given_t_or_f("false")
+    elif maori_numeral == "ono" and number == 6:
+        answer_given_t_or_f("false")
+    elif maori_numeral == "whitu" and number == 7:
+        answer_given_t_or_f("false")
+    elif maori_numeral == "waru" and number == 8:
+        answer_given_t_or_f("false")
+    elif maori_numeral == "iwa" and number == 9:
+        answer_given_t_or_f("false")
+    elif maori_numeral == "tekau" and number == 10:
+        answer_given_t_or_f("false")
     else:
         answer_given_t_or_f("true")
 
