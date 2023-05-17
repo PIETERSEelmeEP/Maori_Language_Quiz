@@ -1,4 +1,4 @@
-"""Program teaching the maori numerals 1 to 10 - v1
+"""Program teaching the maori numerals 1 to 10 - v2
 this puts Maori numerals into a function with the correct results with the
 formatter
 Created by Elme Pieterse
@@ -6,6 +6,7 @@ Created by Elme Pieterse
 """
 
 
+# Functions:
 def formatter(_symbol, _text):
     sides = _symbol * 3
     formatted_text = f"{sides} {_text} {sides}"
@@ -50,6 +51,7 @@ def yes_no_checker(question_text):
             print("Please enter either 'Yes' or 'No': ")
 
 
+# Main Routine
 review_maori_numerals = yes_no_checker("Do you want to learn or revise the "
                                        "maori numerals? (Yes/No): ").lower()
 if review_maori_numerals == "yes":
