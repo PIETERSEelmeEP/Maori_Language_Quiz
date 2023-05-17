@@ -1,7 +1,7 @@
-"""Program's base development - v3
+"""Program's base development - v5
 This program contains the instructions and yes/no checker & the formatter &
-the difficulty level question & maori numerals teaching program added with the
-quizzing the numerals easy
+the difficulty level question & maori numerals teaching program & quizzing the
+numerals easy added with the quizzing numerals hard
 Created by Elme Pieterse
 17/05/2023
 """
