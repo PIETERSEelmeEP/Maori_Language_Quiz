@@ -109,4 +109,5 @@ def question_generator_and_checker_hard():
 
 
 # Main Routine
-question_generator_and_checker_hard()
+for item in range(10):
+    question_generator_and_checker_hard()
