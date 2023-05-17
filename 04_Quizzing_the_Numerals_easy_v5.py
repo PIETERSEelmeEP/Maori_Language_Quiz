@@ -74,5 +74,4 @@ def question_generator_and_answers_easy():
 
 
 # Main Routine
-for item in range(10):
-    question_generator_and_answers_easy()
+question_generator_and_answers_easy()
