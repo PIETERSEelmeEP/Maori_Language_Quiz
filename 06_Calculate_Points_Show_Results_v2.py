@@ -17,6 +17,7 @@ def calculate_points(result_answer):
         points -= 5
         print(f"You have {points} points")
 
+
 # together
 def question_generator_and_checker():
     import random
