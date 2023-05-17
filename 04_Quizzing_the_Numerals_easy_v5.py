@@ -1,5 +1,5 @@
 """Program quizzing the user of Maori Numerals (True or False quiz) - v5
-this takes 04_quizzing_the_numerals_easy_v4 and repeats the program 20 times
+this takes 04_quizzing_the_numerals_easy_v4 and repeats the program 10 times
 Created by Elme Pieterse
 17/05/2023
 """
@@ -69,10 +69,10 @@ def question_generator_and_answers_easy():
         answer_given_t_or_f("false")
     else:
         answer_given_t_or_f("true")
-        
+
     return answer
 
 
 # Main Routine
-for item in range(20):
+for item in range(10):
     question_generator_and_answers_easy()
