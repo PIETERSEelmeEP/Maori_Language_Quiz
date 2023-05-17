@@ -1,120 +1,93 @@
 """Program calculates the users points - v2
 This will calculate the/add/subtract points according to the result_answer,
-this version is the v1 combined with the quizzing_the_numerals_easy_v4
+this version is the v1 combined with the quizzing_the_numerals_easy_v5
 Created by Elme Pieterse
 16/05/2023
 """
 
 
-def calculate_points(result_answer):
-    STARTING_POINTS = 0
-    points = STARTING_POINTS
+# True or False checker Function:
+def true_false_checker(question_text):
+    while True:
 
-    if result_answer == "correct":
-        points += 10
-        print(f"You have {points} points")
-    else:
-        points -= 5
-        print(f"You have {points} points")
+        # Input a true of false question
+        answer = input(question_text).lower()
+
+        # If user input 'true' or 't' output will be 'checking if answer
+        # is correct'
+        if answer == "true" or answer == "t":
+            answer = "True"
+            return answer
+
+        # If user input 'false' or 'f' output will be 'checking if answer
+        # is correct'
+        elif answer == "false" or answer == "f":
+            answer = "False"
+            return answer
+
+        # Otherwise the required inputs will be displayed
+        else:
+            print("Please enter either 'True' or 'False': ")
 
 
-# together
-def question_generator_and_checker():
+def question_generator_and_answers_easy():
     import random
+
     MAORI_NUMERALS = ["tahi", "rua", "toru", "wha", "rima", "ono", "whitu",
                       "waru", "iwa", "tekau"]
     NUMBERS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
     maori_numeral = random.choice(MAORI_NUMERALS)
     number = random.choice(NUMBERS)
     question = f"Does {maori_numeral} mean {number}? "
+    answer = true_false_checker(question).lower()
 
-    def true_false_checker(question_text):
-        while True:
-
-            # Input a true of false question
-            answer = input(question_text).lower()
-
-            # If user input 'true' or 't' output will be 'checking if answer
-            # is correct'
-            if answer == "true" or answer == "t":
-                answer = "True"
-                return answer
-
-            # If user input 'false' or 'f' output will be 'checking if answer
-            # is correct'
-            elif answer == "false" or answer == "f":
-                answer = "False"
-                return answer
-
-            # Otherwise the required inputs will be displayed
-            else:
-                print("Please enter either 'True' or 'False': ")
-
-    answer_given = true_false_checker(question).lower()
-
-    def answer_marker():
-
-        one = "tahi" and 1
-        two = "rua" and 2
-        three = "toru" and 3
-        four = "wha" and 4
-        five = "rima" and 5
-        six = "ono" and 6
-        seven = "whitu" and 7
-        eight = "waru" and 8
-        nine = "iwa" and 9
-        ten = "tekau" and 10
-
-        def answer_given_t_or_f():
-            if answer_given != "true":
-                print("Correct, Amazing job!")
-                calculate_points("correct")
-            else:
-                print("Sorry, keep trying, you can do it!")
-                calculate_points("not")
-
-        if maori_numeral and number != one:
-            if maori_numeral and number != two:
-                if maori_numeral and number != three:
-                    if maori_numeral and number != four:
-                        if maori_numeral and number != five:
-                            if maori_numeral and number != six:
-                                if maori_numeral and number != seven:
-                                    if maori_numeral and number != eight:
-                                        if maori_numeral and number != nine:
-                                            if maori_numeral and number != ten:
-                                                print()
-                                            else:
-                                                if answer_given == "true":
-                                                    print("Correct, Amazing "
-                                                          "job!")
-                                                    calculate_points("correct")
-                                                else:
-                                                    print("Sorry, keep trying,"
-                                                          " you can do it!")
-                                                    calculate_points("wrong")
-                                        else:
-                                            answer_given_t_or_f()
-                                    else:
-                                        answer_given_t_or_f()
-                                else:
-                                    answer_given_t_or_f()
-                            else:
-                                answer_given_t_or_f()
-                        else:
-                            answer_given_t_or_f()
-                    else:
-                        answer_given_t_or_f()
-                else:
-                    answer_given_t_or_f()
-            else:
-                answer_given_t_or_f()
+    def answer_given_t_or_f(true_false_):
+        if answer != true_false_:
+            print("Correct, Amazing job!")
+            result_answer = "correct"
         else:
-            answer_given_t_or_f()
+            print("Sorry, keep trying, you can do it!")
+            result_answer = "incorrect"
 
-    answer_marker()
-    return answer_given
+    if maori_numeral == "tahi" and number == 1:
+        answer_given_t_or_f("false")
+    elif maori_numeral == "rua" and number == 2:
+        answer_given_t_or_f("false")
+    elif maori_numeral == "toru" and number == 3:
+        answer_given_t_or_f("false")
+    elif maori_numeral == "wha" and number == 4:
+        answer_given_t_or_f("false")
+    elif maori_numeral == "rima" and number == 5:
+        answer_given_t_or_f("false")
+    elif maori_numeral == "ono" and number == 6:
+        answer_given_t_or_f("false")
+    elif maori_numeral == "whitu" and number == 7:
+        answer_given_t_or_f("false")
+    elif maori_numeral == "waru" and number == 8:
+        answer_given_t_or_f("false")
+    elif maori_numeral == "iwa" and number == 9:
+        answer_given_t_or_f("false")
+    elif maori_numeral == "tekau" and number == 10:
+        answer_given_t_or_f("false")
+    else:
+        answer_given_t_or_f("true")
+
+    return answer
+
+
+def calculate_points():
+    points = STARTING_POINTS
+    for item in range(10):
+        result_answer = question_generator_and_answers_easy()
+        if result_answer == "correct":
+            points += 10
+            print(f"you have {points} points")
+        else:
+            points -= 5
+            print(f"you have {points} points")
 
 
 # Main Routine
-question_generator_and_checker()
+STARTING_POINTS = 0
+calculate_points()
