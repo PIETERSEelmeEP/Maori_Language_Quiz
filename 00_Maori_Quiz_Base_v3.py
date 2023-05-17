@@ -104,7 +104,7 @@ view_instructions = yes_no_checker("Do you want to see the instructions? "
 if view_instructions == 'yes':
     instructions()
 else:
-    print("Program continues")
+    print()
 
 # Difficulty Level questions:
 difficulty_level = difficulty_level_checker("What level of difficulty do you"
@@ -118,4 +118,4 @@ review_maori_numerals = yes_no_checker("Do you want to learn or revise the "
 if review_maori_numerals == "yes":
     maori_numerals()
 else:
-    print("Program continues")
+    print()
