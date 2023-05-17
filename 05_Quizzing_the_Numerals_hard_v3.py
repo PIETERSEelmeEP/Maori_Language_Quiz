@@ -11,7 +11,6 @@ def question_generator_and_checker_hard():
     MAORI_NUMERALS = ["tahi", "rua", "toru", "wha", "rima", "ono", "whitu",
                       "waru", "iwa", "tekau"]
     maori_numeral = random.choice(MAORI_NUMERALS)
-    maori_numeral = "tahi"
     question = f"What number is {maori_numeral}? "
     error = "Please enter a whole number between 1 and ten: "
 
