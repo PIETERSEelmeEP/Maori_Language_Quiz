@@ -45,10 +45,8 @@ def question_generator_and_answers_easy():
     def answer_given_t_or_f(true_false_):
         if answer != true_false_:
             print("Correct, Amazing job!")
-            result_answer = "correct"
         else:
             print("Sorry, keep trying, you can do it!")
-            result_answer = "incorrect"
 
     if maori_numeral == "tahi" and number == 1:
         answer_given_t_or_f("false")
@@ -86,6 +84,7 @@ def calculate_points():
         else:
             points -= 5
             print(f"you have {points} points")
+        return result_answer
 
 
 # Main Routine
