@@ -81,6 +81,22 @@ def difficulty_level_checker(question):
             print(error)
 
 
+def maori_numerals():
+    print(formatter("~", "Maori Numerals:"))
+    print()
+    print("Tahi = 1")
+    print("Rua = 2")
+    print("Toru = 3")
+    print("Wha = 4")
+    print("Rima = 5")
+    print("Ono = 6")
+    print("Whitu = 7")
+    print("Waru = 8")
+    print("Iwa = 9")
+    print("Tekau = 10")
+    print()
+
+
 # Main Routine:
 # Instructions:
 view_instructions = yes_no_checker("Do you want to see the instructions? "
@@ -95,3 +111,11 @@ difficulty_level = difficulty_level_checker("What level of difficulty do you"
                                             " want to choose: Easy(1) or "
                                             "Hard(2): ")
 print(f"You entered the level {difficulty_level} difficulty")
+
+# Maori numeral teaching
+review_maori_numerals = yes_no_checker("Do you want to learn or revise the "
+                                       "maori numerals? (Yes/No): ").lower()
+if review_maori_numerals == "yes":
+    maori_numerals()
+else:
+    print("Program continues")
