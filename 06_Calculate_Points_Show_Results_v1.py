@@ -6,18 +6,18 @@ Created by Elme Pieterse
 """
 
 
-def calculate_points_show_results():
-    points = 0
-
-    result_answer = "correct" or "incorrect"
-
-    if result_answer == "correct":
-        points += 10
-        print(points)
-    else:
-        points -= 5
-        print(points)
+def calculate_points():
+    points = STARTING_POINTS
+    for item in range(10):
+        result_answer = ""  # the question and answer function will go here
+        if result_answer == "correct":
+            points += 10
+            print(f"you have {points} points")
+        else:
+            points -= 5
+            print(f"you have {points} points")
 
 
 # Main Routine
-calculate_points_show_results()
+STARTING_POINTS = 0
+calculate_points()
