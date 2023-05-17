@@ -1,4 +1,4 @@
-"""Program's instructions & Yes/No Checker - v4
+"""Program's instructions & Yes/No Checker - v5
 This program will have the instructions put into a function
 Created by Elme Pieterse
 04/05/2023
