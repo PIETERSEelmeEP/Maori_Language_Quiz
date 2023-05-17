@@ -69,7 +69,10 @@ def question_generator_and_answers_easy():
         answer_given_t_or_f("false")
     else:
         answer_given_t_or_f("true")
+        
+    return answer
 
 
 # Main Routine
-question_generator_and_answers_easy()
+for item in range(20):
+    question_generator_and_answers_easy()
