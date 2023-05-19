@@ -45,7 +45,7 @@ def thanks_note():
 
 
 # Main Routine:
-exit_program = yes_no_checker("Do you want to see the instructions? "
+exit_program = yes_no_checker("Do you want to exit the quiz? "
                               "(Yes/No): ").lower()
 if exit_program == 'yes':
     thanks_note()
