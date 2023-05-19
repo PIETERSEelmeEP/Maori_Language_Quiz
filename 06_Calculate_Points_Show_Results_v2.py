@@ -73,6 +73,9 @@ def question_generator_and_answers_easy():
 
     return answer
 
+def calculate_points(result_answer):
+    points = STARTING_POINTS
+
 
 def calculate_points():
     points = STARTING_POINTS
@@ -89,4 +92,3 @@ def calculate_points():
 
 # Main Routine
 STARTING_POINTS = 0
-calculate_points()
