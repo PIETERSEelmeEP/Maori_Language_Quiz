@@ -19,4 +19,3 @@ elif view_instructions == "no":
 # Otherwise display required inputs
 else:
     print("Please enter either 'Yes' or 'No': ")
-
