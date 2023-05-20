@@ -89,6 +89,7 @@ def instructions():
     print("Let the quiz begin!")
 
 
+# Difficulty level checker function:
 def difficulty_level_checker(question):
     error = "Please retry: Pick a numeral: 1 or 2"
 
@@ -106,6 +107,7 @@ def difficulty_level_checker(question):
             print(error)
 
 
+# Viewing maori numerals function:
 def maori_numerals():
     print(formatter("~", "Maori Numerals:"))
     print()
@@ -122,6 +124,7 @@ def maori_numerals():
     print()
 
 
+# Questions (easy) function:
 def question_generator_and_answers_easy():
     import random
 
