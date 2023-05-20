@@ -30,6 +30,7 @@ def true_false_checker(question_text):
             print("Please enter either 'True' or 'False': ")
 
 
+# question generator function:
 def question_generator():
     import random
 
