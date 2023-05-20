@@ -6,6 +6,8 @@ Created by Elme Pieterse
 """
 
 
+# functions:
+# number answer checker function:
 def answer_checker_numbers(question_text):
     error = "Please enter a whole number between 1 and ten: "
     while True:
@@ -71,6 +73,7 @@ def answer_checker_numbers(question_text):
             print(error)
 
 
+# question generator (hard) function:
 def question_generator_and_checker_hard():
     import random
     MAORI_NUMERALS = ["tahi", "rua", "toru", "wha", "rima", "ono", "whitu",
