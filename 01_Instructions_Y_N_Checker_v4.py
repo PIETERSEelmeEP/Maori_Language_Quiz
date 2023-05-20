@@ -7,6 +7,7 @@ Created by Elme Pieterse
 
 
 # Functions:
+# yes/no checker function:
 def yes_no_checker(question_text):
     while True:
 
