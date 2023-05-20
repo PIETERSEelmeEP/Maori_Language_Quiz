@@ -5,6 +5,7 @@ Created by Elme Pieterse
 10/05/2023
 """
 
+# question generator:
 import random
 
 MAORI_NUMERALS = ["tahi", "rua", "toru", "wha", "rima", "ono", "whitu",
