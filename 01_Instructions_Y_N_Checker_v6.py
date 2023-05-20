@@ -65,6 +65,7 @@ def instructions():
 
 
 # Main Routine:
+# instructions
 view_instructions = yes_no_checker("Do you want to see the instructions? "
                                    "(Yes/No): ").lower()
 if view_instructions == 'yes':
