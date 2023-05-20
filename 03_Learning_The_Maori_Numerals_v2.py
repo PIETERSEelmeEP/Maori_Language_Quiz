@@ -7,6 +7,7 @@ Created by Elme Pieterse
 
 
 # Functions:
+# formatter function:
 def formatter(_symbol, _text):
     sides = _symbol * 3
     formatted_text = f"{sides} {_text} {sides}"
@@ -14,6 +15,7 @@ def formatter(_symbol, _text):
     return f"{top_bottom}\n{formatted_text}\n{top_bottom}"
 
 
+# viewing maori numerals function:
 def maori_numerals():
     print(formatter("~", "Maori Numerals:"))
     print()
@@ -30,6 +32,7 @@ def maori_numerals():
     print()
 
 
+# yes/no checker function:
 def yes_no_checker(question_text):
     while True:
 
