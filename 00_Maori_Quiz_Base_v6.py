@@ -278,8 +278,8 @@ def question_generator_and_checker_hard():
 
 
 # Main Routine:
-play = "nope"
-while play != "play again":
+play = "play again"
+while play == "play again":
     # Instructions:
     view_instructions = yes_no_checker("Do you want to see the instructions? "
                                        "(Yes/No): ").lower()
@@ -315,5 +315,6 @@ while play != "play again":
                                   "(Yes/No): ").lower()
     if exit_program == 'yes':
         thanks_note()
+        play = "nope"
     else:
         play = "play again"
