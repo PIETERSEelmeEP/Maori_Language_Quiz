@@ -306,6 +306,7 @@ while play == "play again":
         print()
 
     # The questions for each level of difficulty
+    print(formatter("~", "Questions"))
     for item in range(10):
         if difficulty_level == 1:
             question_generator_and_answers_easy()
