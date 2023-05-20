@@ -5,6 +5,8 @@ Created by Elme Pieterse
 """
 
 
+# Functions:
+# number answer checker function:
 def answer_checker_numbers(question_text):
     error = "Please enter a whole number between 1 and ten: "
     while True:
@@ -70,7 +72,9 @@ def answer_checker_numbers(question_text):
             print(error)
 
 
+# questions (hard) function:
 def question_generator_and_checker_hard():
+    # question generator
     import random
     MAORI_NUMERALS = ["tahi", "rua", "toru", "wha", "rima", "ono", "whitu",
                       "waru", "iwa", "tekau"]
@@ -78,12 +82,14 @@ def question_generator_and_checker_hard():
     question = f"What number is {maori_numeral}? "
     answer_given = int(answer_checker_numbers(question))
 
+    # say of answer is correct or not function:
     def answer_given_marked(number):
         if answer_given == number:
             print("Correct, Amazing job!")
         else:
             print("Sorry, keep trying, you can do it!")
 
+    # questions
     if maori_numeral == "tahi":
         answer_given_marked(1)
     elif maori_numeral == "rua":
