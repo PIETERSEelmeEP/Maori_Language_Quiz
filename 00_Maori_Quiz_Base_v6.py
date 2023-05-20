@@ -155,6 +155,7 @@ def instructions():
     print("Let the quiz begin!")
 
 
+# difficulty level checker function:
 def difficulty_level_checker(question):
     error = "Please retry: Pick a numeral: 1 or 2"
 
@@ -172,6 +173,7 @@ def difficulty_level_checker(question):
             print(error)
 
 
+# Viewing maori numerals function:
 def maori_numerals():
     print(formatter("~", "Maori Numerals:"))
     print()
@@ -195,6 +197,7 @@ def thanks_note():
     print("Enjoy the rest of your day!")
 
 
+# questions (easy) function
 def question_generator_and_answers_easy():
     import random
 
@@ -239,6 +242,7 @@ def question_generator_and_answers_easy():
     return answer
 
 
+# questions (hard) function:
 def question_generator_and_checker_hard():
     import random
     MAORI_NUMERALS = ["tahi", "rua", "toru", "wha", "rima", "ono", "whitu",
