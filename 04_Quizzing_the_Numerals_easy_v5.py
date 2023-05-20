@@ -29,24 +29,26 @@ def true_false_checker(question_text):
             print("Please enter either 'True' or 'False': ")
 
 
+# question (easy) function:
 def question_generator_and_answers_easy():
+    # question generator:
     import random
-
     MAORI_NUMERALS = ["tahi", "rua", "toru", "wha", "rima", "ono", "whitu",
                       "waru", "iwa", "tekau"]
     NUMBERS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
     maori_numeral = random.choice(MAORI_NUMERALS)
     number = random.choice(NUMBERS)
     question = f"Does {maori_numeral} mean {number}? "
     answer = true_false_checker(question).lower()
 
+    # say if answer is correct or not function:
     def answer_given_t_or_f(true_false_):
         if answer != true_false_:
             print("Correct, Amazing job!")
         else:
             print("Sorry, keep trying, you can do it!")
 
+    # questions
     if maori_numeral == "tahi" and number == 1:
         answer_given_t_or_f("false")
     elif maori_numeral == "rua" and number == 2:
