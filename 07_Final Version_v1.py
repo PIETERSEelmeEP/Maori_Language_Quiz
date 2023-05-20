@@ -1,9 +1,8 @@
-"""Th - v5
-This program contains the instructions and yes/no checker & the formatter &
-the difficulty level question & maori numerals teaching program & quizzing the
-numerals easy & the quizzing numerals hard added with the play again
+"""The program's final copy/version - v1
+This program contains all the functions and main routine from
+00_Maori_Quiz_Base_v6, however it is edited to a better layout for the user
 Created by Elme Pieterse
-19/05/2023
+20/05/2023
 """
 
 
@@ -131,7 +130,6 @@ def yes_no_checker(question_text):
 # instructions function:
 def instructions():
     print(formatter("~", "Maori Numerals Quiz Instructions"))
-    print()
     print("This program will quiz your knowledge on the Maori numbers 1 to 10")
     print("You will have a option at the start of the quiz to view/learn the "
           "maori numbers 1 to 10, if you choose")
@@ -209,9 +207,9 @@ def question_generator_and_answers_easy():
 
     def answer_given_t_or_f(true_false_):
         if answer != true_false_:
-            print("Correct, Amazing job!")
+            print(formatter("=", "Correct, Amazing job!"))
         else:
-            print("Sorry, keep trying, you can do it!")
+            print(formatter("-", "Sorry, keep trying, you can do it!"))
 
     if maori_numeral == "tahi" and number == 1:
         answer_given_t_or_f("false")
@@ -249,9 +247,9 @@ def question_generator_and_checker_hard():
 
     def answer_given_marked(number):
         if answer_given == number:
-            print("Correct, Amazing job!")
+            print(formatter("=", "Correct, Amazing job!"))
         else:
-            print("Sorry, keep trying, you can do it!")
+            print(formatter("-", "Sorry, keep trying, you can do it!"))
 
     if maori_numeral == "tahi":
         answer_given_marked(1)
@@ -278,6 +276,8 @@ def question_generator_and_checker_hard():
 
 
 # Main Routine:
+print(formatter("*", "Welcome to the Maori Numeral Quiz"))
+print()
 play = "play again"
 while play == "play again":
     # Instructions:
@@ -285,6 +285,7 @@ while play == "play again":
                                        "(Yes/No): ").lower()
     if view_instructions == 'yes':
         instructions()
+        print()
     else:
         print()
 
@@ -292,7 +293,8 @@ while play == "play again":
     difficulty_level = difficulty_level_checker("What level of difficulty do "
                                                 "you want to choose: Easy(1) "
                                                 "or Hard(2): ")
-    print(f"You entered the level {difficulty_level} difficulty")
+    print(formatter("~", f"Level {difficulty_level} difficulty"))
+    print()
 
     # Maori numeral teaching
     review_maori_numerals = yes_no_checker("Do you want to learn or revise "
@@ -307,8 +309,10 @@ while play == "play again":
     for item in range(10):
         if difficulty_level == 1:
             question_generator_and_answers_easy()
+            print()
         else:
             question_generator_and_checker_hard()
+            print()
 
     # Ask if they want to play again
     exit_program = yes_no_checker("Do you want to exit the quiz? "
@@ -318,3 +322,4 @@ while play == "play again":
         play = "nope"
     else:
         play = "play again"
+        print("\n")
