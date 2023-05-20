@@ -6,6 +6,7 @@ Created by Elme Pieterse
 MAORI_NUMERALS = "Maori Numerals"
 
 
+# functions:
 def yes_no_checker(question_text):
     while True:
 
@@ -27,6 +28,7 @@ def yes_no_checker(question_text):
             print("Please enter either 'Yes' or 'No': ")
 
 
+# main routine:
 review_maori_numerals = yes_no_checker("Do you want to learn or revise the "
                                        "maori numerals? (Yes/No): ")
 if review_maori_numerals == "yes":
