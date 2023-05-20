@@ -158,7 +158,6 @@ def instructions():
 # difficulty level checker function:
 def difficulty_level_checker(question):
     error = "Please retry: Pick a numeral: 1 or 2"
-
     while True:
         try:
             # Ask what level difficulty
@@ -192,23 +191,24 @@ def maori_numerals():
 
 # Questions (Easy) function:
 def question_generator_and_answers_easy():
+    # question generator
     import random
-
     MAORI_NUMERALS = ["tahi", "rua", "toru", "wha", "rima", "ono", "whitu",
                       "waru", "iwa", "tekau"]
     NUMBERS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
     maori_numeral = random.choice(MAORI_NUMERALS)
     number = random.choice(NUMBERS)
     question = f"Does {maori_numeral} mean {number}? "
     answer = true_false_checker(question).lower()
 
+    # say if answer is correct of not function
     def answer_given_t_or_f(true_false_):
         if answer != true_false_:
             print("Correct, Amazing job!")
         else:
             print("Sorry, keep trying, you can do it!")
 
+    # questions
     if maori_numeral == "tahi" and number == 1:
         answer_given_t_or_f("false")
     elif maori_numeral == "rua" and number == 2:
@@ -231,12 +231,12 @@ def question_generator_and_answers_easy():
         answer_given_t_or_f("false")
     else:
         answer_given_t_or_f("true")
-
     return answer
 
 
 # questions (hard) function:
 def question_generator_and_checker_hard():
+    # question generator
     import random
     MAORI_NUMERALS = ["tahi", "rua", "toru", "wha", "rima", "ono", "whitu",
                       "waru", "iwa", "tekau"]
@@ -244,12 +244,14 @@ def question_generator_and_checker_hard():
     question = f"What number is {maori_numeral}? "
     answer_given = int(answer_checker_numbers(question))
 
+    # saying if answer is correct of not function
     def answer_given_marked(number):
         if answer_given == number:
             print("Correct, Amazing job!")
         else:
             print("Sorry, keep trying, you can do it!")
 
+    # questions
     if maori_numeral == "tahi":
         answer_given_marked(1)
     elif maori_numeral == "rua":
