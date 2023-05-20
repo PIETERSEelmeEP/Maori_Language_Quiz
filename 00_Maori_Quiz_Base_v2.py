@@ -64,6 +64,7 @@ def instructions():
     print("Let the quiz begin!")
 
 
+# Difficulty level checker function:
 def difficulty_level_checker(question):
     error = "Please retry: Pick a numeral: 1 or 2"
 
@@ -90,7 +91,7 @@ if view_instructions == 'yes':
 else:
     print("Program continues")
 
-# Difficulty Level questions:
+# Difficulty Level question:
 difficulty_level = difficulty_level_checker("What level of difficulty do you"
                                             " want to choose: Easy(1) or "
                                             "Hard(2): ")
