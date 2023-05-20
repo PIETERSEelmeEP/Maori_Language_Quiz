@@ -6,6 +6,7 @@ Created by Elme Pieterse
 """
 
 
+# question generator (hard) function:
 def question_generator_hard():
     import random
 
